@@ -19,7 +19,7 @@ BOOL CMainDlg::OnIdle()
 {
 	UIUpdateChildWindows();
 	return FALSE;
-}
+} 
 
 LRESULT CMainDlg::OnInitDialog(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/)
 {
