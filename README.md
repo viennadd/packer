@@ -1,4 +1,4 @@
-  Github Pages:
+  ## Github Pages:
   
   [http://viennadd.github.io/packer/](http://viennadd.github.io/packer/)
 
@@ -35,9 +35,9 @@
 
 # stub流程:
 
-* 解压，填充iat
-* 无错误检查
-* 密集式注解是给本人看的
+* 解压
+* 填充iat
+* 跳到OEP
 
 ***
 
