@@ -1,51 +1,47 @@
-﻿*
-*
-*
-*没有处理资源表(还没看)
-
-*不良Tls处理(不支持tls*callback)
-
-*dll无力
-
-*只压缩
-
-*
+  Github Pages:
+  [http://viennadd.github.io/packer/](http://viennadd.github.io/packer/)
 
 
+# 简介
+> 学习PE结构和加壳流程的作品
 
-*流程大概是：
+> 没有处理资源表
 
-*载入PE和stub.dll
+> 不支持tls callback
 
-*新增区段放stub的代码段（包含stub导入表和stub数据）
+> dll无力
 
-*使用stub的重定位表重定位一下stub
+> 只压缩，无加密和反调试
 
-*产物使用stub的导入表
+***
 
-*Tls单纯搞块00，原本有的callback会丢失
+# 流程大概是：
 
-*各区段原地压缩
+* 载入PE和stub.dll
 
-*
+* 新增区段放stub的代码段（包含stub导入表和stub数据）
 
+* 使用stub的重定位表重定位一下stub
 
+* 产物使用stub的导入表
 
-*stub流程:
+* Tls单纯搞块00，原本有的callback会丢失
 
-*解压，填充iat
+* 各区段原地压缩
 
-
-
-*无错误检查
-
-*密集式注解是给本人看的
+***
 
 
+# stub流程:
 
-*感谢看雪各种时期大牛们的资料分享
+* 解压，填充iat
+* 无错误检查
+* 密集式注解是给本人看的
 
-*感谢零下安全的群友们指导与帮助
+***
 
-*
+# 致谢
+* 感谢看雪各种时期大牛们的资料分享
+* 感谢零下安全的群友们指导与帮助
+
 
