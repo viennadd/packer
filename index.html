@@ -1,38 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
     <title>Packer by viennadd</title>
-  </head>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+  </head>
   <body>
 
-    <header>
-      <div class="container">
+      <header>
         <h1>Packer</h1>
-        <h2>A Packer of exe files.</h2>
+        <p>A Packer of exe files.</p>
+      </header>
 
-        <section id="downloads">
-          <a href="https://github.com/viennadd/packer/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/viennadd/packer/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/viennadd/packer" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
+      <div id="banner">
+        <span id="logo"></span>
 
-    <div class="container">
-      <section id="main_content">
-        <h1>Github Pages:</h1>
+        <a href="https://github.com/viennadd/packer" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/viennadd/packer/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/viennadd/packer/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+<a name="github-pages" class="anchor" href="#github-pages"><span class="octicon octicon-link"></span></a>Github Pages:</h1>
 
 <p><a href="http://viennadd.github.io/packer/">http://viennadd.github.io/packer/</a></p>
 
-<h2>简介</h2>
+<h2>
+<a name="%E7%AE%80%E4%BB%8B" class="anchor" href="#%E7%AE%80%E4%BB%8B"><span class="octicon octicon-link"></span></a>简介</h2>
 
 <blockquote>
 <p>学习PE结构和加壳流程的作品</p>
@@ -46,7 +59,8 @@
 <p>只压缩，无加密和反调试</p>
 </blockquote>
 
-<hr><h2>流程大概是：</h2>
+<hr><h2>
+<a name="%E6%B5%81%E7%A8%8B%E5%A4%A7%E6%A6%82%E6%98%AF" class="anchor" href="#%E6%B5%81%E7%A8%8B%E5%A4%A7%E6%A6%82%E6%98%AF"><span class="octicon octicon-link"></span></a>流程大概是：</h2>
 
 <ol>
 <li><p>载入PE和stub.dll</p></li>
@@ -55,13 +69,15 @@
 <li><p>产物使用stub的导入表</p></li>
 <li><p>Tls单纯搞块00，原本有的callback会丢失</p></li>
 <li><p>各区段原地压缩</p></li>
-</ol><hr><h2>stub流程:</h2>
+</ol><hr><h2>
+<a name="stub%E6%B5%81%E7%A8%8B" class="anchor" href="#stub%E6%B5%81%E7%A8%8B"><span class="octicon octicon-link"></span></a>stub流程:</h2>
 
 <ol>
 <li><p>解压</p></li>
 <li><p>填充iat</p></li>
 <li><p>跳到OEP</p></li>
-</ol><hr><h2>致谢</h2>
+</ol><hr><h2>
+<a name="%E8%87%B4%E8%B0%A2" class="anchor" href="#%E8%87%B4%E8%B0%A2"><span class="octicon octicon-link"></span></a>致谢</h2>
 
 <blockquote>
 <p>感谢看雪各种时期大牛们的资料分享</p>
@@ -69,8 +85,12 @@
 <p>感谢零下安全的群友们指导与帮助</p>
 </blockquote>
       </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/viennadd">viennadd</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
     </div>
-
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
 </html>
